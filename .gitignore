@@ -1,0 +1,11 @@
+# direnv
+.direnv/
+.envrc.local
+
+# sample mails — may contain internal infrastructure details
+*.eml
+*.msg
+*.mbox
+
+# spamassassin state
+.spamassassin/
