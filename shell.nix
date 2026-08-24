@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Niklas Wildenburg
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 { pkgs ? import <nixpkgs> {} }:
 pkgs.mkShell {
   packages = [

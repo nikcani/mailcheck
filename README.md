@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2026 Niklas Wildenburg
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
 # mailcheck
 
 Offline SPF / DKIM / DMARC analysis of raw `.eml` files, using FLOSS CLI tools
@@ -53,3 +58,12 @@ authoritative mail authentication validator. The header parsing makes
 assumptions that will not hold for every message, and a wrong verdict here is
 entirely possible. Verify anything important against the receiving MTA's own
 `Authentication-Results:` header.
+
+## License
+
+AGPL-3.0-or-later. See [LICENSES/AGPL-3.0-or-later.txt](LICENSES/AGPL-3.0-or-later.txt).
+
+The tools this script invokes are separate programs, executed as subprocesses;
+their licenses do not apply to this code. For reference: SpamAssassin and
+checkdmarc (Apache-2.0), dkimpy (BSD-3-Clause), dnspython (ISC), pyspf (GPL-2.0) and swaks
+(GPL-2.0-or-later).
